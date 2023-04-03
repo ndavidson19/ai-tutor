@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { CssBaseline, AppBar, Toolbar, Typography, Container, IconButton, Drawer, List, ListItem, ListItemText } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
+import Header from '../components/Header';
 
 const theme = createTheme();
 
@@ -34,6 +35,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <ThemeProvider theme={theme}>
+      <Header />
       <CssBaseline />
       <AppBar position="static">
         <Toolbar>
